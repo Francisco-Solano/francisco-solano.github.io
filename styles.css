@@ -33,7 +33,7 @@ header .header-content {
     text-align: left;
 }
 
-header .text-and-icons {
+header .texto-y-iconos {
     flex: 1; /* El contenido ocupa el espacio restante */
 }
 
@@ -59,10 +59,9 @@ header .icons i {
 }
 
 header .profile-image img {
-    width: 170px;
-    height: 170px;
+    width: 180px;
+    height: 210px;
     border-radius: 25%;
-    margin: 0; /* Elimina margen superior */
 }
 
 /* Secciones */
@@ -84,18 +83,13 @@ h3 {
 
 /* Certificados */
 
-/* General */
-.certificados {
-    font-family: Arial, sans-serif;
-    
-}
 
 /* Contenedor Flex para la imagen y el texto */
 
 .certificado-contenedor {
-    display: flex; /* Habilita el modelo flexbox */
-    align-items: flex-start; /* Alinea los elementos al inicio (parte superior) */
-    justify-content: space-between; /* Separa texto e imagen */
+    display: flex;
+    align-items: flex-start; 
+    justify-content: space-between; 
     gap: 20px; /* Espaciado entre el texto y la imagen */
     margin-bottom: 30px;
 }
@@ -111,7 +105,7 @@ h3 {
 .certificado-contenedor img {
     max-width: 40%; /* Imagen ocupa un 40% del ancho */
     height: auto; /* Mantiene las proporciones */
-    border-radius: 5px; /* Redondea los bordes de la imagen */
+    border-radius: 5px; 
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Añade un pequeño sombreado */
 }
 
@@ -146,6 +140,8 @@ h3 {
     border: 1px solid #ddd;
     border-radius: 5px;
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    text-decoration: none; 
+    color: inherit; 
 }
 
 .project-card h3 {
@@ -190,16 +186,5 @@ project-card p {
     border-radius: 3px;
     font-size: 0.9rem;
 }
-
-/* References */
-.references a {
-    color: #007BFF;
-    text-decoration: none;
-}
-
-.references a:hover {
-    text-decoration: underline;
-}
-
 
 
