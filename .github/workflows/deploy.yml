@@ -3,7 +3,7 @@ name: Deploy to GitHub Pages
 on:
   push:
     branches:
-      - main  
+      - main  # Detecta cambios en el branch principal
 
 jobs:
   deploy:
@@ -16,6 +16,6 @@ jobs:
       - name: Deploy to GitHub Pages
         uses: JamesIves/github-pages-deploy-action@v4
         with:
-          branch: main  
-          folder: .         
-          token: ${{ secrets.GITHUB_TOKEN }} 
+          branch: gh-pages  # Branch donde se publicará el contenido
+          folder: .         # Carpeta raíz del proyecto
+          token: ${{ secrets.GITHUB_TOKEN }}
