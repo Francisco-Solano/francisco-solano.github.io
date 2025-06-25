@@ -72,10 +72,18 @@
         </section>
 
 
-         <!-- Certificados -->
-<section class="certificados">
+       <section class="certificados">
     <h2>Certificados</h2>
-    <div class="certificado-contenedor">
+
+    <!-- Botones de pestañas -->
+    <div class="tabs">
+        <button class="tab-button active" onclick="mostrarCertificados('tecnicos')">Técnicos</button>
+        <button class="tab-button" onclick="mostrarCertificados('softskills')">Soft Skills</button>
+    </div>
+
+    <!-- Contenedor de certificados técnicos -->
+    <div id="certificados-tecnicos" class="tab-content active">
+           <div class="certificado-contenedor">
         <div class="certificado-texto">
             <h3>Certificado de Java Avanzado – OpenWebinars</h3>
             <p>
@@ -85,9 +93,17 @@
         <img src="images/certificado_java.png" alt="Certificado de Java Avanzado – OpenWebinars"  class="certificado"/>
     </div>
 
+    <div class="certificado-contenedor">
+        <div class="certificado-texto">
+            <h3>Máster en .NET – Udemy</h3>
+            <p>
+                Certificado que acredita que he realizado el curso de máster en .NET. Este curso me ha otorgado un conocimiento muy profundo en .NET y el desarrollo de aplicaciones en este framework, incluyendo el desarrollo de aplicaciones robustas, mantenimiento de arquitecturas escalables y uso de tecnologías como ASP.NET, Entity Framework, scaffolding y C# entre otras.
+            </p>
+        </div>
+        <img src="images/Master .NET_page-0001.jpg" alt="Master de .NET – Udemy"  class="certificado"/>
+    </div>
 
- 
- <div class="certificado-contenedor">
+    <div class="certificado-contenedor">
     <div class="certificado-texto">
         <h3>Certificado de Fundamentos JavaScript – OpenWebinars</h3>
         <p>
@@ -96,7 +112,17 @@
     <img src="images/certificado_fundamentos_de_javascript.png" alt="Certificado de Desarrollo Web – Codecademy" class="certificado" />
 </div>
 
- 
+   <div class="certificado-contenedor">
+        <div class="certificado-texto">
+            <h3>Certificado en .NET avanzado – Udemy</h3>
+            <p>
+                Certificado que acredita que he completado el curso en .NET avanzado. Este curso me ha otorgado un conocimiento basico en .NET que he consegido profundizar practicando y que me da pie para poder seguir formándome en este importante lenguaje de Microsoft.
+            </p>
+        </div>
+        <img src="images/Certificado.NET_page-0001.jpg" alt="Certificado de .NET Avanzado – Udemy"  class="certificado"/>
+    </div>
+
+
  <div class="certificado-contenedor">
     <div class="certificado-texto">
         <h3>Certificado de seguridad JWT en API rest Spring Boot – OpenWebinars</h3>
@@ -105,6 +131,7 @@
     </div>
     <img src="images/certificado_seguridad_jwt_api_rest_spring_boot-.png" alt="Certificado de seguridad en aplicaciones backend – Codecademy" class="certificado" />
 </div>
+
 
 <div class="certificado-contenedor">
     <div class="certificado-texto">
@@ -115,26 +142,148 @@
     <img src="images/certificado_introduccion_a_docker.png" alt="Certificado de desarrollo en docker – Codecademy" class="certificado" />
 </div>
 
+<div class="certificado-contenedor">
+    <div class="certificado-texto">
+        <h3>Certificado de Fundamentos de Azure – Udemy</h3>
+        <p>
+            Certificado que acredita que he superado el curso de fundamentos de azure. Este curso me ha ayudado mucho a comprender como funciona esta tecnología que tanto se utiliza en el mundo laboral tanto su funcionamiento teórico como práctico y me ha servido para saber realizar todo lo basico que se necesita al utilizar Azure como despliegues de aplicaciones, creaciones de servidores, etc. </p>
+    </div>
+    <img src="images/Certificado Curso Azure_page-0001.jpg" alt="Certificado de azure – Udemy" class="certificado" />
+</div>
 
+<div class="certificado-contenedor">
+    <div class="certificado-texto">
+        <h3>Certificado de Hacking Ético I – Viewnext</h3>
+        <p>
+            Certificado que acredita que he superado el curso de primer grado de hacking ético. Este curso telemático me ha ayudado a profundizar en mi interés en la ciberseguridad, enseñándome a utilizar maquinas virtuales, aplicaciones y sitios web de hacking para poder extraer información de cualquier lugar de manera ética con fines educativos. </p>
+    </div>
+    <img src="images/Certificado Hacking Etico_page-0001.jpg" alt="Certificado de hacking ético – Viewnext" class="certificado" />
+
+</div>
+
+<div class="certificado-contenedor">
+    <div class="certificado-texto">
+        <h3>Certificado de SQL Avanzado – Viewnext</h3>
+        <p>
+            Certificado que acredita que he superado el curso de SQL Avanzado. Este curso me ha ayudado a repasar conceptos que ya conocía de mi formación, de manera que los he podido profundizar y aplicar en casos reales que propone el propio curso. </p>
+    </div>
+    <img src="images/Certificado SQL Avanzado_page-0001.jpg" alt="Certificado de SQL Avanzado – Viewnext" class="certificado" />
+</div>
+
+<div class="certificado-contenedor">
+    <div class="certificado-texto">
+        <h3>Certificado de HTML5 Y CSS3– Viewnext</h3>
+        <p>
+            Certificado que acredita que he realizado el curso de HTML5 y CSS3 que me ha ayudado a afianzar los conocimientos que aprendí durante mi formación y que estoy aplicando en esta propia página web. </p>
+    </div>
+    <img src="images/MOD-016 HTML5CSS3_Certificado HTML5CSS3_page-0001.jpg" alt="Certificado de HTML y CSS – Viewnext" class="certificado" />
+</div>
+
+<div class="certificado-contenedor">
+    <div class="certificado-texto">
+        <h3>Certificado de GIT-GIT Flow – Viewnext</h3>
+        <p>
+            Certificado que acredita que he realizado el curso de GIT y GIT Flow. Este curso me ha ayudado a interiorizar los conocimientos que tenía sobre GIT aportandome conceptos teóricos como la distribución de las ramas para organizar el trabajo y el manejo por comandos por bash y en github para los repositorios. </p>
+    </div>
+    <img src="images/MOD-041 Git-Git Flow_Certificado Git _ Git Flow_page-0001.jpg" alt="Certificado de GIT y GIT Flow– Viewnext" class="certificado" />
+</div>
+
+<div class="certificado-contenedor">
+    <div class="certificado-texto">
+        <h3>Certificado de JQuery – Viewnext</h3>
+        <p>
+            Certificado que acredita que he realizado el curso de JQuery, una de las bibliotecas de JavaScript más utilizadas en el desarrollo web. A través del curso he aprendido a simplificar la manipulación del DOM, gestionar eventos, aplicar efectos visuales y realizar peticiones AJAX de forma eficiente. Esta formación me ha permitido agilizar el desarrollo frontend y mejorar la interacción dinámica de las interfaces web. </p>
+    </div>
+    <img src="images/MOD-078 JQuery_Certificado JQuery_page-0001.jpg" alt="Certificado de JQuery – Viewnext" class="certificado" />
+</div>
+
+
+
+
+</div>
+
+
+
+    <!-- Contenedor de certificados soft skills -->
+    <div id="certificados-softskills" class="tab-content">
+        <!-- Ejemplo de uno -->
+       <div class="certificado-contenedor">
+    <div class="certificado-texto">
+        <h3>Certificado de Como dar Feedback– Viewnext</h3>
+        <p>
+            Certificado que acredita que he realizado el curso que mejora la softskill de dar feedback de una manera adecuada y respetuosa. Enseñando el momento en el que dar el feedback, tener empatía con la persona que lo recibe entre otros factores importantes que me han ayudado a seguir mejorando como trabajador.  </p>
+    </div>
+    <img src="images/Certificado Como dar Feedback_page-0001.jpg" alt="Certificado de como dar feedback – Viewnext" class="certificado" />
+</div>
+
+<div class="certificado-contenedor">
+    <div class="certificado-texto">
+        <h3>Certificado de Gestión del tiempo – Viewnext</h3>
+        <p>
+            Certificado que acredita que he realizado el curso de softskill de gestión del tiempo. Este curso ayuda a saber organizar las tareas y separarlas entre urgentes e importantes, dando ejemplos de casos reales que han hecho que reflexione y aprenda a gestionarme mucho mejor, mejorando mi productividad. </p>
+    </div>
+    <img src="images/Certificado Gestion del tiempo_page-0001.jpg" alt="Certificado de gestión del tiempo – Viewnext" class="certificado" />
+</div>
+
+<div class="certificado-contenedor">
+    <div class="certificado-texto">
+        <h3>Certificado Todo oídos – Viewnext</h3>
+        <p>
+            Certificado que acredita que he realizado el curso de softskill de Todo oídos. Este curso consiste en mejorar la habilidad de escucha y comunicación logrando crear conversaciones fluidas y valiosas consiguiendo que ambas partes se sientan escuchadas y valoradas. Lo cual es vital para conseguir un buen entorno laboral y beneficioso para todos. </p>
+    </div>
+    <img src="images/Certificado TodoOidos_page-0001.jpg" alt="Certificado de todo oídos – Viewnext" class="certificado" />
+</div>
+
+<div class="certificado-contenedor">
+    <div class="certificado-texto">
+        <h3>Certificado de Trabajo en Equipo – Viewnext</h3>
+        <p>
+            Certificado que acredita que he realizado el curso de softskill de trabajo en equipo. Este curso ayuda a poder organizar un equipo analizando las cualidades de cada uno logrando que todos los integrantes se sientan comodos y valorados y como resultado final se consiga realizar el proyecto propuesto de manera correcta y rápida. Una habilidad importante para este sector ya que la mayoría de veces se trabaja en equipo. </p>
+    </div>
+    <img src="images/Certificado Trabajo en Equipo_page-0001.jpg" alt="Certificado de trabajo en equipo – Viewnext" class="certificado" />
+</div>
+
+
+
+<div class="certificado-contenedor">
+    <div class="certificado-texto">
+        <h3>Certificado de Seguridad de la información – Viewnext</h3>
+        <p>
+            Certificado que acredita que he realizado el curso de seguridad de la información, que ayuda a identificar el tipo de informacion que es vital que no sea revelada al público en un entorno laboral y de qué manera mantenerla segura.  </p>
+    </div>
+    <img src="images/Certificado_page-0001.jpg" alt="Certificado de seguridad de la información – Viewnext" class="certificado" />
+</div>
+
+
+<div class="certificado-contenedor">
+    <div class="certificado-texto">
+        <h3>Certificado de Fundamentos de IA – Viewnext</h3>
+        <p>
+            Certificado que acredita que he realizado el curso de Fundamentos de IA generativa. Este curso ayuda a utilizar la Intelijencia Artificial de manera útil y optimizada para conseguir resultados satisfactorios en el menor tiempo posible, asegurando posteriormente la calidad de los mismos mediante una revisión. </p>
+    </div>
+    <img src="images/Fundamentos de la IA Generativa_Certificado Fundamentos de la IA Generativa_page-0001.jpg" alt="Certificado de fundamentos de IA – Viewnext" class="certificado" />
+</div>
+
+      
+    </div>
 </section>
+
 
 
         <!-- Experiencia Laboral -->
         <section class="work-experience">
             <h2>Experiencia Laboral</h2>
-            <h3>Paseador de perros</h3>
-            <span>2023 - 2024</span>
-            <p>Trabajo temporal en el que paseaba perros de otras personas durante un tiempo determinado, 
-                conseguido mediante la aplicacion "Rover". En este trabajo gestioné de manera autónoma un servicio profesional, fidelizando clientes a través de una comunicación clara y confiable.
-                Planifiqué y organizé horarios adaptados a las necesidades de los clientes, desarrollando una excelente gestión del tiempo.
-                Con esta experiencia aprendí a trabajar bajo mi responsabilidad y a mantener un enfoque en la seguridad y bienestar de los animales.</p>
-       
-            <h3>Colaborador en Estudio de Mercado - Grefusa S.L</h3>
-            <span>Junio de 2023</span>
-            <p>Participé en un estudio de mercado orientado a la innovación y desarrollo de productos, aportando ideas y soluciones creativas.
-                Colaboré analizando estrategias de marketing y sugiriendo mejoras para campañas publicitarias en redes sociales y diseño de logos.
-                Gracias a esta experiencia desarrollé habilidades analíticas, pensamiento crítico y comunicación efectiva en un entorno colaborativo.</p>
+            <h3>Prácticas de Becario en Viewnext</h3>
+            <span>2025</span>
+            <p>He realizado durante 3 meses unas prácticas como becario en las oficinas de Viewnext en Sevilla, una destacada empresa 
+                del grupo IBM. Esta experiencia me permitió integrarme en un entorno corporativo en el que he tenido acceso a las 
+                formaciones internas que permite la empresa realizar libremente y que he sabido aprovechar, además de la carga de trabajo
+                 que me ayudó a ver cómo se organiza y se trabaja en una empresa de alto nivel. Esta oportunidad me demostró que puedo a
+                daptarme al ritmo de trabajo exigente y contribuir de forma significativa al equipo y sus objetivos. Gracias a esta experiencia,
+                no solo afianzé y amplié mis conocimientos técnicos, sino que también aprendí cómo se estructuran y desarrollan los proyectos
+                en una gran empresa tecnológica. </p> 
         </section>
+       
 
         <!-- Estudios -->
         <section class="education">
@@ -153,6 +302,15 @@
         <section class="projects">
             <h2>Proyectos</h2>
             <div class="project-grid">
+
+                 <a href="https://github.com/Francisco-Solano/francisco-solano.github.io" class="project-card">
+                <div class="card">
+                    <h3>TFG Worky <i class="fab fa-github"></i></h3>
+                    <p>Aplicación de organizar proyectos con método kanban inspirada en Trello que presenté en mi TFG.</p>
+                    <span>Java/ React + Vite/ TailwindCSS/ Azure/ GIT/ SonarQube</span>
+                </div>
+                </a>
+
                 <!-- Tarjeta 1 -->
                 <a href="https://github.com/Francisco-Solano/Chat-Privado-Cliente" class="project-card">
                     <div class="card">
@@ -189,32 +347,41 @@
                 </div>
                 </a>
                 <!-- Tarjeta 5 -->
-                <a href="https://github.com/Francisco-Solano/francisco-solano.github.io" class="project-card">
-                <div class="card">
-                    <h3>CV en HTML <i class="fab fa-github"></i></h3>
-                    <p>Esta propia pagina web en la que pongo a prueba mis conocimientos en HTML,CSS y JavaScript de una manera original.</p>
-                    <span>HTML/ CSS/ JavaScript</span>
-                </div>
-                </a>
+                
             </div>
         </section>
 
         <!-- Habilidades -->
         <section class="skills">
-            <h2>Habilidades</h2>
-            <div class="skills-list">
-                <span> <i class="fab fa-html5"></i> HTML</span>
-                <span> <i class="fab fa-css3-alt"></i> CSS</span>
-                <span> <i class="fab fa-js-square"></i> JavaScript</span>
-                <span> <i class="fab fa-java"></i> Java</span>
-                <span> <i class="fab fa-python"></i> Python</span>
-                <span> <i class="fab fa-unity"></i> Unity</span>
-                <span> <i class="fab fa-github"></i> GitHub</span>
-                <span> <i class="fab fa-android"></i> Android</span>
-                <span> <i class="fas fa-database"></i> MySQL Workbench</span>
-                <span> <i class="fas fa-rocket"></i> SpringBoot</span>
-                <span> <i class="fas fa-cogs"></i> Odoo</span>
-            </div>
+       <h2>Habilidades</h2>
+<div class="skills-list">
+    <span><i class="fab fa-html5"></i> HTML5</span>
+    <span><i class="fab fa-css3-alt"></i> CSS3</span>
+    <span><i class="fab fa-js-square"></i> JavaScript</span>
+    <span><i class="fab fa-java"></i> Java</span>
+    <span><i class="fab fa-python"></i> Python</span>
+    <span><i class="fab fa-github"></i> Git & GitHub</span>
+    <span><i class="fab fa-android"></i> Android</span>
+    <span><i class="fas fa-database"></i> MySQL</span>
+    <span><i class="fas fa-database"></i> SQL Server</span>
+    <span><i class="fas fa-rocket"></i> Spring Boot</span>
+    <span><i class="fas fa-cogs"></i> Odoo</span>
+    <span><i class="fas fa-cogs"></i> React.js</span>
+    <span><i class="fas fa-cogs"></i> React Native</span>
+    <span><i class="fas fa-cogs"></i> .NET Framework</span>
+    <span><i class="fas fa-cogs"></i> ASP.NET</span>
+    <span><i class="fas fa-cogs"></i> ASP.NET MVC</span>
+    <span><i class="fas fa-code"></i> C#</span>
+    <span><i class="fas fa-cloud"></i> Microsoft Azure</span>
+    <span><i class="fab fa-docker"></i> Docker</span>
+    <span><i class="fas fa-bug"></i> SonarQube</span>
+    <span><i class="fas fa-mobile-alt"></i> Flutter</span>
+    <span><i class="fas fa-paint-brush"></i> Figma</span>
+    <span><i class="fas fa-laptop-code"></i> Tailwind CSS</span>
+    <span><i class="fas fa-shield-alt"></i> Ciberseguridad</span>
+    <span><i class="fas fa-desktop"></i> Máquinas Virtuales</span>
+</div>
+
         </section>
 
         <!-- Idiomas -->
