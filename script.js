@@ -33,3 +33,29 @@ images.forEach(card => {
 })
 
 
+function mostrarCertificados(tipo) {
+    const botones = document.querySelectorAll('.tab-button');
+    const contenidos = document.querySelectorAll('.tab-content');
+
+    botones.forEach(btn => btn.classList.remove('active'));
+    contenidos.forEach(tab => tab.classList.remove('active'));
+
+    document.getElementById(`certificados-${tipo}`).classList.add('active');
+    document.querySelector(`.tab-button[onclick*="${tipo}"]`).classList.add('active');
+}
+
+
+let slideIndex = 0;
+const slides = document.querySelectorAll(".slide");
+
+function cambiarSlide(n) {
+    slides[slideIndex].classList.remove("active");
+    slideIndex = (slideIndex + n + slides.length) % slides.length;
+    slides[slideIndex].classList.add("active");
+}
+
+
+
+
+
+
